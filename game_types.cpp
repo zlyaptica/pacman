@@ -1,7 +1,6 @@
 #include "game_types.h"
 
-game_types::game_types()
+bool operator==(position &a, position &b)
 {
-
+    return a.x == b.x && a.y == b.y;
 }
-
