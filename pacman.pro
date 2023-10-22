@@ -1,5 +1,5 @@
 TEMPLATE = app
-CONFIG += console c++11
+CONFIG += console c++17
 CONFIG -= app_bundle
 CONFIG -= qt
 
@@ -13,9 +13,10 @@ SOURCES += main.cpp \
     score.cpp \
     tools.cpp
 
-message($$PWD)
+include(deployment.pri)
+qtcAddDeployment()
+
 SFML_PATH= $$PWD/../3rdparty/SFML-2.6.0
-message($$SFML_PATH)
 INCLUDEPATH += $$SFML_PATH/include
 LIBS += -L$$SFML_PATH/lib -lFLAC \
                          -lfreetype \
