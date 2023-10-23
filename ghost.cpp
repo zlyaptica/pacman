@@ -53,7 +53,7 @@ void ghost::draw(bool flash, sf::RenderWindow &window)
     sf::Sprite face;
 
     sf::Texture texture;
-    texture.loadFromFile("res/img/ghost" + std::to_string(CELL_SIZE) + ".png");
+    texture.loadFromFile("img/ghost" + std::to_string(CELL_SIZE) + ".png");
 
     body.setTexture(texture);
     body.setPosition(cur_position.x, cur_position.y);

@@ -8,7 +8,7 @@ void draw_map(game_map &map, sf::RenderWindow &window)
     sf::Sprite sprite;
 
     sf::Texture texture;
-    texture.loadFromFile("res/img/map" + std::to_string(CELL_SIZE) + ".png");
+    texture.loadFromFile("img/map" + std::to_string(CELL_SIZE) + ".png");
 
     sprite.setTexture(texture);
 
@@ -81,7 +81,7 @@ void draw_text(bool center, position pos, std::string text, sf::RenderWindow &wi
     sf::Sprite character_sprite;
     sf::Texture font_texture;
 
-    font_texture.loadFromFile("res/img/font.png");
+    font_texture.loadFromFile("img/font.png");
 
     character_width = font_texture.getSize().x / 96;
     character_sprite.setTexture(font_texture);

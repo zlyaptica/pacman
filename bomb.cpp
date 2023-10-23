@@ -17,7 +17,7 @@ void bomb::draw(sf::RenderWindow &window)
 
     sf::Texture texture;
 
-    texture.loadFromFile("res/img/bomb" + std::to_string(CELL_SIZE) + ".png");
+    texture.loadFromFile("img/bomb" + std::to_string(CELL_SIZE) + ".png");
 
     sprite.setPosition(cur_position.x, cur_position.y);
 

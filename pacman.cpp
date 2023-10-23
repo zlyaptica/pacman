@@ -31,7 +31,7 @@ void pacman::draw(bool is_victory, sf::RenderWindow &window)
         {
             animation_timer++;
 
-            texture.loadFromFile("res/img/pacman_death" + std::to_string(CELL_SIZE) + ".png");
+            texture.loadFromFile("img/pacman_death" + std::to_string(CELL_SIZE) + ".png");
 
             sprite.setTexture(texture);
             sprite.setTextureRect(sf::IntRect(CELL_SIZE * frame, 0, CELL_SIZE, CELL_SIZE));
@@ -45,7 +45,7 @@ void pacman::draw(bool is_victory, sf::RenderWindow &window)
     }
     else
     {
-        texture.loadFromFile("res/img/pacman" + std::to_string(CELL_SIZE) + ".png");
+        texture.loadFromFile("img/pacman" + std::to_string(CELL_SIZE) + ".png");
 
         sprite.setTexture(texture);
         sprite.setTextureRect(sf::IntRect(CELL_SIZE * frame, CELL_SIZE * direction, CELL_SIZE, CELL_SIZE));
