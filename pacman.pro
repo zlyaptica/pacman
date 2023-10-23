@@ -4,7 +4,7 @@ CONFIG -= app_bundle
 CONFIG -= qt
 
 SOURCES += main.cpp \
-    bomg.cpp \
+    bomb.cpp \
     game_types.cpp \
     ghost.cpp \
     ghost_manager.cpp \
@@ -49,7 +49,7 @@ LIBS += -L$$SFML_PATH/lib -lFLAC \
                          -lvorbisfile
 
 HEADERS += \
-    bomg.h \
+    bomb.h \
     game_types.h \
     ghost.h \
     ghost_manager.h \
